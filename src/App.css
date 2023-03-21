@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #fff6e3;
+  --form-bg: #eae6ff;
+  --form-text: #393b64;
+  --form-btn: #5850b0;
+  --form-btn-hover: #312d62;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* Global Styles */
+
+input::placeholder {
+  color: var(--form-text);
+  font-weight: 700;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: var(--form-btn);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 320px;
+  height: 40px;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--form-btn-hover);
+}
+
+/* Local styles */
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  border: 1px solid brown;
+  padding: 2em;
+  border-radius: 20px;
+  background-color: var(--form-bg);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item :not(input) {
+  background-color: white;
+}
+
+form input {
+  width: 280px;
+  height: 40px;
+  padding: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
